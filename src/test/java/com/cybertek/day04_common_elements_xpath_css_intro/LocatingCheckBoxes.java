@@ -52,6 +52,7 @@ public class LocatingCheckBoxes {
 
 
 
+
         // close browser
         driver.quit();
 
