@@ -1,7 +1,9 @@
-package com.cybertek.tests.day06_junit_practice_utility_methods;
+package com.cybertek.tests.day06_driver_utility_testbase_alerts_tables;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LoginFormPracticeTest {
+
     WebDriver driver ;
     // setting up all driver stuff here directly in @BeforeEach method
     @BeforeEach
@@ -28,7 +31,7 @@ public class LoginFormPracticeTest {
     @Test
     public void testLogin(){
 
-        driver.get("https://practice.cybertekschool.com/login");
+        driver.get("http://practice.cybertekschool.com/login");
 
         //h2[ .='Login Page' ]
         WebElement header = driver.findElement(By.xpath("//h2[ .='Login Page' ]"));
